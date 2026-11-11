@@ -1,0 +1,5 @@
+{
+    "code-runner.executorMap": {
+        "cpp": "cd \"$workspaceRoot\" && g++ -std=c++17 -Iinclude -I../Menu/include src/*.cpp ../Menu/src/Menu.cpp ../Menu/src/Color.cpp -o app && gnome-terminal -- bash -c 'cd \"$workspaceRoot\" && ./app; echo; read -p \"Press Enter to close...\"'"
+    }
+}

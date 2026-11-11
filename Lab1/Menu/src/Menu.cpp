@@ -1,34 +1,44 @@
 #include "Menu.h"
 
 #include <iostream>
-
+using namespace std;
+using namespace color;
 namespace Menu {
 
-void draw(int x, int y, const std::string& line1, const std::string& line2,
-          const std::string& line3, color::Color selectedColor) {
+void draw(int x, int y, const string& line1, const string& line2,
+          const string& line3, Color selectedColor) {
   if (x < 0 || y < 0) {
-    std::cerr << "Error: x and y coordinates must be non-negative."
-              << std::endl;
+    cerr << "Error: x and y coordinates must be non-negative." << endl;
     return;
   }
   if (line1.empty() || line2.empty() || line3.empty()) {
-    std::cerr << "Error: Menu lines cannot be empty." << std::endl;
+    cerr << "Error: Menu lines cannot be empty." << endl;
     return;
   }
-  if (!color::isValid(selectedColor)) {
-    std::cerr << "Error: Invalid color selected." << std::endl;
+  if (!isValid(selectedColor)) {
+    cerr << "Error: Invalid color selected." << endl;
     return;
   }
-  std::cout << "\033[" << y << ";" << x << "H";
-  std::cout << color::apply(line1, selectedColor);
+  cout << "\033[" << y << ";" << x << "H";
+  cout << apply(line1, selectedColor);
 
-  std::cout << "\033[" << y + 1 << ";" << x << "H";
-  std::cout << color::apply(line2, selectedColor);
+  cout << "\033[" << y + 1 << ";" << x << "H";
+  cout << apply(line2, selectedColor);
 
-  std::cout << "\033[" << y + 2 << ";" << x << "H";
-  std::cout << color::apply(line3, selectedColor);
+  cout << "\033[" << y + 2 << ";" << x << "H";
+  cout << apply(line3, selectedColor);
 
-  std::cout.flush();
+  cout.flush();
+}
+
+void draw(int x, int y, int number) {
+  if (x < 0 || y < 0) {
+    cerr << "Error: x and y coordinates must be non-negative." << endl;
+    return;
+  }
+  cout << "\033[" << y << ";" << x << "H";
+  this_thread::sleep_for(chrono::milliseconds(300));
+  cout << number << flush;
 }
 
 }  // namespace Menu

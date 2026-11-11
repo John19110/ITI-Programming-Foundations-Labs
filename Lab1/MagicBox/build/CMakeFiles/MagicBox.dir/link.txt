@@ -1,1 +1,0 @@
-/usr/bin/c++ -Wall -Wextra -Wpedantic -Wl,--dependency-file=CMakeFiles/MagicBox.dir/link.d CMakeFiles/MagicBox.dir/src/hello.cpp.o CMakeFiles/MagicBox.dir/src/MagicBox.cpp.o -o MagicBox

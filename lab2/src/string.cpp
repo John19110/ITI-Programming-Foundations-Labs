@@ -3,8 +3,8 @@
 #include "../include/StringOperations.h"
 using namespace std;
 const int ARR_SIZE = 101;
-char* toUpper(const char input[]) {
-  static char upper[ARR_SIZE];
+char* toUpper(const char* const input) {
+  static char upper[ARR_SIZE];  //
   int i = 0;
   for (i = 0; input[i] != '\0'; i++) {
     if (((input[i] >= 'A' && input[i] <= 'Z') ||
@@ -12,7 +12,6 @@ char* toUpper(const char input[]) {
         i <= ARR_SIZE - 1) {
       if (input[i] >= 'A' && input[i] <= 'Z') {
         upper[i] = input[i];
-
       } else {
         upper[i] = input[i] - 32;
       }
@@ -20,6 +19,8 @@ char* toUpper(const char input[]) {
       return nullptr;
     }
   }
+  // i++;
+
   if (i <= ARR_SIZE - 1) upper[i++] = '\0';
   return upper;
 }

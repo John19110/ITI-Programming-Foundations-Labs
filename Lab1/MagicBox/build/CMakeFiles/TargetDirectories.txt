@@ -1,3 +1,0 @@
-/run/media/john/01DD605ED2AD2DA0/iti/Foundimintals/Labs/Lab1/MagicBox/build/CMakeFiles/MagicBox.dir
-/run/media/john/01DD605ED2AD2DA0/iti/Foundimintals/Labs/Lab1/MagicBox/build/CMakeFiles/edit_cache.dir
-/run/media/john/01DD605ED2AD2DA0/iti/Foundimintals/Labs/Lab1/MagicBox/build/CMakeFiles/rebuild_cache.dir

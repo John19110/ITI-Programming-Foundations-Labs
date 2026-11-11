@@ -6,4 +6,4 @@ char* toLower(const char input[]);
 bool Compare(const char input[], const char input2[]);
 void Copy(char distenation[], const char source[]);
 
-#endif  // StringOperations_H
+#endif
