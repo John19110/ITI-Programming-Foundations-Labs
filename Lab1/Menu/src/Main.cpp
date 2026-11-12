@@ -1,13 +1,17 @@
 #include <iostream>
+#define X 10
+#define Y 10
+#define linesCount 3
 
 #include "../include/Menu.h"
 using namespace Menu;
 using namespace color;
 int main() {
-  char menu[3][20] = {{"1- New"}, {"2- Display"}, {"3- Exit"}};
-  draw(5, 5, menu, 3, WHITE);
-  update(menu, 5, 5, 3);
+  char menu[3][30] = {{"1- New"}, {"2- Display"}, {"3- Exit"}};
+  draw(X, Y, menu, 3, GREEN);
+  drawLine(X, Y, menu[0], BLUE);
 
-  // Exit the program successfully
+  update(menu, X, Y, linesCount,BLUE);
+
   return 0;
 }

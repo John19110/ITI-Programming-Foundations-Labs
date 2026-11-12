@@ -152,6 +152,30 @@ src/Color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/src/Color.cpp.s
 .PHONY : src/Color.cpp.s
 
+src/Employee.obj: src/Employee.cpp.obj
+.PHONY : src/Employee.obj
+
+# target to build an object file
+src/Employee.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/src/Employee.cpp.obj
+.PHONY : src/Employee.cpp.obj
+
+src/Employee.i: src/Employee.cpp.i
+.PHONY : src/Employee.i
+
+# target to preprocess a source file
+src/Employee.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/src/Employee.cpp.i
+.PHONY : src/Employee.cpp.i
+
+src/Employee.s: src/Employee.cpp.s
+.PHONY : src/Employee.s
+
+# target to generate assembly for a file
+src/Employee.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/src/Employee.cpp.s
+.PHONY : src/Employee.cpp.s
+
 src/Main.obj: src/Main.cpp.obj
 .PHONY : src/Main.obj
 
@@ -212,6 +236,9 @@ help:
 	@echo ... src/Color.obj
 	@echo ... src/Color.i
 	@echo ... src/Color.s
+	@echo ... src/Employee.obj
+	@echo ... src/Employee.i
+	@echo ... src/Employee.s
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s

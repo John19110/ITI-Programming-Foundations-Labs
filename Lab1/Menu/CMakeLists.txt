@@ -12,6 +12,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 add_executable(Menu
     src/Main.cpp
     src/Menu.cpp
+    src/Employee.cpp
     src/Color.cpp
 )
 

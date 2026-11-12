@@ -136,6 +136,7 @@ CMakeFiles/Menu.dir/src/Menu.cpp.obj: \
  C:/Users/JOhn/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/x86_64-w64-mingw32/include/pthread_unistd.h \
  C:/Users/JOhn/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/16.2.0/bits/this_thread_sleep.h \
  D:/iti/Foundimintals/Labs/Lab1/Menu/include/Color.h \
+ D:/iti/Foundimintals/Labs/Lab1/Menu/include/Employee.h \
  C:/Users/JOhn/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/16.2.0/iostream \
  C:/Users/JOhn/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/16.2.0/ostream \
  C:/Users/JOhn/AppData/Local/Microsoft/WinGet/Packages/BrechtSanders.WinLibs.POSIX.UCRT_Microsoft.Winget.Source_8wekyb3d8bbwe/mingw64/include/c++/16.2.0/bits/ostream.h \

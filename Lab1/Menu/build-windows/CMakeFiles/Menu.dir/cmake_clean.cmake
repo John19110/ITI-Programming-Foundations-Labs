@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Menu.dir/src/Color.cpp.obj"
   "CMakeFiles/Menu.dir/src/Color.cpp.obj.d"
+  "CMakeFiles/Menu.dir/src/Employee.cpp.obj"
+  "CMakeFiles/Menu.dir/src/Employee.cpp.obj.d"
   "CMakeFiles/Menu.dir/src/Main.cpp.obj"
   "CMakeFiles/Menu.dir/src/Main.cpp.obj.d"
   "CMakeFiles/Menu.dir/src/Menu.cpp.obj"

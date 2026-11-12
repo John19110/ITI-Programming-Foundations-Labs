@@ -84,12 +84,12 @@ clean: CMakeFiles/Menu.dir/clean
 CMakeFiles/Menu.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles --progress-num=1,2,3,4 "Built target Menu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles --progress-num=1,2,3,4,5 "Built target Menu"
 .PHONY : CMakeFiles/Menu.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Menu.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Menu.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles 0
 .PHONY : CMakeFiles/Menu.dir/rule
@@ -101,7 +101,7 @@ Menu: CMakeFiles/Menu.dir/rule
 # codegen rule for target.
 CMakeFiles/Menu.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Menu.dir\build.make CMakeFiles/Menu.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target Menu"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\iti\Foundimintals\Labs\Lab1\Menu\build-windows\CMakeFiles --progress-num=1,2,3,4,5 "Finished codegen for target Menu"
 .PHONY : CMakeFiles/Menu.dir/codegen
 
 # clean rule for target.

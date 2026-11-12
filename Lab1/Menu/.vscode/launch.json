@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run Menu",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/Menu",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "console": "integratedTerminal",
+            "MIMode": "gdb",
+            "preLaunchTask": "build",
+            "windows": {
+                "program": "${workspaceFolder}/Menu.exe"
+            }
+        }
+    ]
+}
