@@ -1,3 +1,7 @@
+
 {
-    "C_Cpp.errorSquiggles": "disabled"
+    "code-runner.runInTerminal": false,
+    "code-runner.executorMap": {
+        "cpp": "cd $workspaceRoot && g++ -std=c++17 -I include src/*.cpp -o Menu.exe && start cmd /k Menu.exe"
+    }
 }

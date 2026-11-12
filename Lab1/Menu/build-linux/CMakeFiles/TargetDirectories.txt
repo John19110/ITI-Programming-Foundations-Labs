@@ -1,0 +1,3 @@
+/run/media/john/01DD605ED2AD2DA0/iti/Foundimintals/Labs/Lab1/Menu/build-linux/CMakeFiles/Menu.dir
+/run/media/john/01DD605ED2AD2DA0/iti/Foundimintals/Labs/Lab1/Menu/build-linux/CMakeFiles/edit_cache.dir
+/run/media/john/01DD605ED2AD2DA0/iti/Foundimintals/Labs/Lab1/Menu/build-linux/CMakeFiles/rebuild_cache.dir

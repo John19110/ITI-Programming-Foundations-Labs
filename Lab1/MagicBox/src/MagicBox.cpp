@@ -22,7 +22,7 @@ int main() {
   cout << "\033[2J";
   cout << "\033[H";
   while (counter <= size * size) {
-    draw(space * col, space * row, counter);
+    drawMagic(space * col, space * row, counter);
     if (counter % size == 0 && counter != size * size) {
       row = (row + 1) % size;
     } else {

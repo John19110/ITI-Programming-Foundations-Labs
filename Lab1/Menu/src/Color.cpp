@@ -2,7 +2,7 @@
 
 namespace color {
 
-std::string apply(const std::string& text, Color selectedColor) {
+std::string apply(char text[], Color selectedColor) {
   std::string code;
 
   switch (selectedColor) {

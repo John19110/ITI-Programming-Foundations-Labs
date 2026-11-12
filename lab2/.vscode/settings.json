@@ -1,0 +1,6 @@
+{
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "cpp": "Set-Location \"$workspaceRoot\"; g++ -std=c++17 -I include src\\*.cpp -o app.exe; if ($LASTEXITCODE -eq 0) { .\\app.exe }"
+    }
+}

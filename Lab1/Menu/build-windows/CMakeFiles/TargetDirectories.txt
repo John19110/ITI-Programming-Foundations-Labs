@@ -1,0 +1,3 @@
+D:/iti/Foundimintals/Labs/Lab1/Menu/build-windows/CMakeFiles/Menu.dir
+D:/iti/Foundimintals/Labs/Lab1/Menu/build-windows/CMakeFiles/edit_cache.dir
+D:/iti/Foundimintals/Labs/Lab1/Menu/build-windows/CMakeFiles/rebuild_cache.dir

@@ -5,13 +5,15 @@
 #include <thread>
 
 #include "Color.h"
-using namespace std;
-using namespace color;
 namespace Menu {
-void draw(int x, int y, const string& line1, const string& line2,
-          const string& line3, Color selectedColor);
+void draw(int x, int y, char lines[10][20], int linsNumber,
+          color::Color selectedColor);
 
-void draw(int x, int y, int number);
+void drawMagic(int x, int y, int number);
+void drawLine(int x, int y, char Line[20], color::Color selectedColor);
+
+char getch();
+void update(char lines[10][20], int initialY, int initialX, int linescount);
+// void clearscreen();
 }  // namespace Menu
-
 #endif

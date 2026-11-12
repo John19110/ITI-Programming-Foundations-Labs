@@ -4,7 +4,10 @@
 using namespace Menu;
 using namespace color;
 int main() {
-  Menu::draw(10, 10, "1. Start", "2. Settings", "3. Exit", GREEN);
+  char menu[3][20] = {{"1- New"}, {"2- Display"}, {"3- Exit"}};
+  draw(5, 5, menu, 3, WHITE);
+  update(menu, 5, 5, 3);
 
+  // Exit the program successfully
   return 0;
 }
