@@ -65,7 +65,7 @@ void Employee::addFixedNumber() {
 }
 
 void Employee::addUntilFinished() {
-  int capacity = 2;
+  int capacity = 20;
   int count = 0;
 
   Employee* employees = new Employee[capacity];
