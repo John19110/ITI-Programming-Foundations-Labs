@@ -86,8 +86,7 @@ void Employee::addUntilFinished() {
       capacity = newCapacity;
     }
 
-    cout << "\n========== Employee " << count + 1
-         << " ==========\n";
+    cout << "\n========== Employee " << count + 1<< " ==========\n";
 
     employees[count] = Employee::inputEmployee();
     count++;
