@@ -127,6 +127,7 @@ ostream& operator<<(ostream& out, const Complex& C) {
     if (C.getReal() != 0) out << "+";
 
     out << C.getImg() << "j";
+
   } else if (C.getImg() < 0) {
     out << C.getImg() << "j";
   }
@@ -157,3 +158,11 @@ std::istream& operator>>(std::istream& in, Complex& C) {
 
   return in;
 }
+
+bool Complex::operator<(Complex C) { return (img < C.img && real < C.real); }
+
+bool Complex::operator>(Complex C) { return (img > C.img && real > C.real); }
+
+bool Complex::operator<=(Complex C) { return (img <= C.img && real <= C.real); }
+
+bool Complex::operator>=(Complex C) { return (img >= C.img && real >= C.real); }

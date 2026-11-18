@@ -1,5 +1,6 @@
 #include "Employee.h"
 #include <iostream>
+#include"Stack.h"
 
 using namespace std;
 
@@ -44,51 +45,44 @@ void Employee::addFixedNumber() {
   cout << "How many employees do you want to add? ";
   cin >> count;
 
-  Employee employees[MAX_EMPLOYEES];
+
+  Stack Employees(count);
 
   for (int i = 0; i < count; i++) {
     cout << "\n========== Employee " << i + 1
          << " ==========\n";
 
-    employees[i] = Employee::inputEmployee();
+        Employees.push(Employee::inputEmployee());
+
   }
 
   cout << "\n========== Employees Created ==========\n";
 
-  for (int i = 0; i < count; i++) {
-    cout << "\nEmployee " << i + 1 << '\n';
-    cout << "Name: " << employees[i].name << '\n';
-    cout << "Age: " << employees[i].age << '\n';
-    cout << "Salary: " << employees[i].salary << '\n';
-    cout << "Department: " << employees[i].department << '\n';
-  }
+      Employees.display();
+
 }
 
 void Employee::addUntilFinished() {
   int capacity = 20;
   int count = 0;
 
-  Employee* employees = new Employee[capacity];
+    Stack* employees=new Stack(capacity);
 
   char choice = 'y';
 
   while (choice == 'y' || choice == 'Y') {
     if (count == capacity) {
       int newCapacity = capacity * 2;
-      Employee* newEmployees = new Employee[newCapacity];
+      Stack* newEmployees = new Stack(newCapacity);
 
-      for (int i = 0; i < count; i++) {
-        newEmployees[i] = employees[i];
-      }
-
-      delete[] employees;
+      delete employees;
       employees = newEmployees;
       capacity = newCapacity;
     }
 
     cout << "\n========== Employee " << count + 1<< " ==========\n";
 
-    employees[count] = Employee::inputEmployee();
+    employees->push( Employee::inputEmployee());
     count++;
 
     cout << "\nAdd another employee? (y/n): ";
@@ -97,13 +91,8 @@ void Employee::addUntilFinished() {
 
   cout << "\n========== Employees Created ==========\n";
 
-  for (int i = 0; i < count; i++) {
-    cout << "\nEmployee " << i + 1 << '\n';
-    cout << "Name: " << employees[i].name << '\n';
-    cout << "Age: " << employees[i].age << '\n';
-    cout << "Salary: " << employees[i].salary << '\n';
-    cout << "Department: " << employees[i].department << '\n';
-  }
+      employees->display();
 
-  delete[] employees;
+
+  delete employees;
 }

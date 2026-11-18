@@ -42,6 +42,14 @@ class Complex {
   bool operator&&(const Complex& C) const;
   bool operator||(const Complex& C) const;
   bool operator!() const;
+
+  bool Complex::operator<(Complex C);
+
+  bool Complex::operator>(Complex C);
+
+  bool Complex::operator<=(Complex C);
+
+  bool Complex::operator>=(Complex C);
 };
 
 Complex operator+(const int x, const Complex& C);

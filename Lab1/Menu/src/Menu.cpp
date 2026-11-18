@@ -2,7 +2,7 @@
 #include "Employee.h"
 #include <iostream>
 #include <limits>
-
+#include"Stack.h"
 #ifdef _WIN32
 #include <conio.h>
 #elif defined(__linux__)
@@ -14,8 +14,7 @@ using namespace std;
 using namespace color;
 
 namespace Menu {
-//================DRAW=====================
-// for menu
+
 void draw(int x, int y, char Lines[10][30], int linesNumber,
           Color selectedColor) {
   if (x < 0 || y < 0) {
